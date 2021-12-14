@@ -1,4 +1,4 @@
-import { Nav, Navbar, FormControl, Form, Button } from "react-bootstrap";
+import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import { IoCartOutline, IoSearch } from "react-icons/io5";
 const MyNav = () => {
   return (
@@ -11,6 +11,15 @@ const MyNav = () => {
       <Navbar.Brand href="#home">Strive Library</Navbar.Brand>
       <Nav className="mr-auto">
         <Nav.Link href="#home">Home</Nav.Link>
+        <NavDropdown title="Select Book Category" id="basic-nav-dropdown">
+          <NavDropdown.Item href="#action/3.1">Sci-fi</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.2">Romantic</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.3">Horror</NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.3">Fantacy</NavDropdown.Item>
+
+          <NavDropdown.Divider />
+          <NavDropdown.Item href="#action/3.4">History</NavDropdown.Item>
+        </NavDropdown>
       </Nav>
       <Nav className="mr-sm-2">
         <IoSearch
