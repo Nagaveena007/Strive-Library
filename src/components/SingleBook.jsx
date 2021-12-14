@@ -8,10 +8,10 @@ class SingleBook extends Component {
   render() {
     return (
       <Col md={3} className="mb-2">
-        <Card style={{}}>
+        <Card style={{ height: "68vh" }}>
           <Card.Img
             variant="top"
-            style={{}}
+            style={{ height: "40vh", objectFit: "cover" }}
             src={this.props.singlebook.img}
             onClick={() =>
               this.setState({
